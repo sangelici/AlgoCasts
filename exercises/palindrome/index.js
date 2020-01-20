@@ -7,6 +7,19 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+function palindrome(str) {
+    return str.split('').every((char, i) => {
+        return char === str[str.length - i - 1]
+    })
+}
+
+// NOTE: The every method will iterate over EVERY index, so that means it will repeat itself (in this case) once it passes the middle of the array
 
 module.exports = palindrome;
+
+// Solution 1
+// function palindrome(str) {
+//     let reversed = str.split('').reduce((rev, char) => char + rev, '')
+
+//     return str === reversed;
+// }
