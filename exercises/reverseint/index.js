@@ -9,13 +9,6 @@
 //   reverseInt(-90) === -9
 
 function reverseInt(n) {
-    let reversed = n
-        .toString()
-        .split('')
-        .reverse()
-        .join('');
-
-    return parseInt(reversed) * Math.sign(n)
 }
 
 module.exports = reverseInt;
@@ -32,4 +25,16 @@ module.exports = reverseInt;
 //     } else {
 //         return revNum
 //     }
+// }
+
+
+// SOLUTION TWO
+// function reverseInt(n) {
+//     let reversed = n
+//         .toString()
+//         .split('')
+//         .reverse()
+//         .join('');
+
+//     return parseInt(reversed) * Math.sign(n)
 // }

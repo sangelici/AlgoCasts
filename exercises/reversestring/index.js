@@ -7,8 +7,6 @@
 //   reverse('Greetings!') === '!sgniteerG'
 
 function reverse(str) {
-    //  reduce method takes all the values in one array and condenses it into one value
-    return str.split('').reduce((rev, char) => char + rev, '')
 }
 
 
@@ -49,4 +47,10 @@ module.exports = reverse;
 //     }
 
 //     return reversed;
+// }
+
+// SOLUTION THREE
+// function reverse(str) {
+//     //  reduce method takes all the values in one array and condenses it into one value
+//     return str.split('').reduce((rev, char) => char + rev, '')
 // }

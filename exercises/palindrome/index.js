@@ -8,9 +8,6 @@
 //   palindrome("abcdefg") === false
 
 function palindrome(str) {
-    return str.split('').every((char, i) => {
-        return char === str[str.length - i - 1]
-    })
 }
 
 // NOTE: The every method will iterate over EVERY index, so that means it will repeat itself (in this case) once it passes the middle of the array
@@ -22,4 +19,11 @@ module.exports = palindrome;
 //     let reversed = str.split('').reduce((rev, char) => char + rev, '')
 
 //     return str === reversed;
+// }
+
+// SOLUTION TWO
+// function palindrome(str) {
+//     return str.split('').every((char, i) => {
+//         return char === str[str.length - i - 1]
+//     })
 // }
