@@ -9,18 +9,6 @@
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
 function chunk(array, size) {
-    let chunked = [];
-    let index = 0;
-
-    while(index < array.length) {
-        // take the chunk between the index and the 'index+size' and push it into chunked
-        // the second argument in slice method refers to the index, but doesn't include it in chunk
-        chunked.push(array.slice(index, index + size));
-        // increment index by the size to move to the starting point of the next chunk
-        index += size;
-    }
-
-    return chunked;
 }
 
 module.exports = chunk;
