@@ -10,9 +10,19 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
-function anagrams(stringA, stringB) {
+// Step 1: create a helper function
+function cleanStr(str) {
+    // return a string that removes spaces + punctuation,
+    // is then turned into all lowercase letters,
+    // split into an array of characters,
+    // sorted alphabetically,
+    // then joined back together into one string
+    return str.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('')
 }
 
+function anagrams(stringA, stringB) {
+    return cleanStr(stringA) === cleanStr(stringB)
+}
 
 
 anagrams("hey there!", "yer heeth")
