@@ -30,7 +30,7 @@ function pyramid(n, row = 0, level = '') {
     // initializes midpoint
     const midpoint = Math.floor((2 * n - 1) / 2);
     let add;
-    
+
     // if the string hasn't been finished
     if (midpoint - row <= level.length && midpoint + row >= level.length) {
         add = "#";
@@ -72,3 +72,29 @@ module.exports = pyramid;
 // }
 
 // SOLUTION TWO: RECURSION
+// function pyramid(n, row = 0, level = '') {
+//     // base case
+//     if (n === row) {
+//         return;
+//     }
+
+//     // if # of columns = the length of the string
+//     if (level.length === 2 * n - 1) {
+//         console.log(level)
+//         // loop again
+//         return pyramid(n, row + 1);
+//     }
+
+//     // initializes midpoint
+//     const midpoint = Math.floor((2 * n - 1) / 2);
+//     let add;
+    
+//     // if the string hasn't been finished
+//     if (midpoint - row <= level.length && midpoint + row >= level.length) {
+//         add = "#";
+//     } else {
+//         add = " ";
+//     }
+
+//   pyramid(n, row, level + add);
+// }
