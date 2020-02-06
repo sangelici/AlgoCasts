@@ -21,9 +21,9 @@ module.exports = maxChar;
 
 //     // iterate through each character of the string
 //     for (let char of str) {
-//         // set the value to chars[char]
-//         // if that char value is greater than 1, add 1
-//         // if that char hasn't been counted before, set it to 1
+//       // set the value to chars[char]
+//       // if that char value is greater than 1, add 1
+//       // if that char hasn't been counted before, set it to 1
 //         chars[char] = chars[char] + 1 || 1
 //         // EX:
 //         // "hello" -> { "h":1, "e":1, "l":2, "o":1 }

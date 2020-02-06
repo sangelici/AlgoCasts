@@ -65,10 +65,8 @@ module.exports = pyramid;
 //                 level += ' '
 //             }
 //         }
-
 //         console.log(level)
 //     }
-
 // }
 
 // SOLUTION TWO: RECURSION
